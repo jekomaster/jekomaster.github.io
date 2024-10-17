@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Gsap library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,7 +16,8 @@
 
     <main>
         <p>This is a simple webpage hosted on GitHub Pages.</p>
-        <img src="images/logo.png" alt="Website Logo">
+        <img src="images/logo.png" alt="Logo" class="logo-animation" id="logo" draggable="false">
+        <!-- Button to trigger the bounce animation -->
     </main>
 
     <footer>

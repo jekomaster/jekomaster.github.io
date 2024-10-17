@@ -1,5 +1,4 @@
 /* Basic styling for the website */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,9 +19,38 @@ main {
     text-align: center;
 }
 
-img {
-    max-width: 200px;
+
+
+/* Define the bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px); /* Bounce up */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
 }
+
+.bounce {
+    animation: bounce 0.8s /* infinite ease-in-out; */ 
+}
+
+
+
+
+img {
+    max-width: 100px;
+    cursor: pointer;
+    outline: none;
+    user-select: none; /* Prevent text selection */
+}
+
+
+
+    
 
 footer {
     background-color: #333;
@@ -34,3 +62,12 @@ footer {
     bottom: 0;
 }
 
+/* Style for explosion particles */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 80%;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Neon glow */
+}
