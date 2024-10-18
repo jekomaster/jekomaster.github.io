@@ -33,6 +33,24 @@ main {
     animation: bounce 0.8s ease-in-out; 
 }
 
+/* Prevent selection only on the logo */
+#logo {
+    user-select: none;  /* Disable text selection on the logo */
+    cursor: pointer;    /* Keep pointer cursor on hover */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+/* Add padding around the logo to increase clickable area */
+.logo-hit-area {
+    padding: 10px; /* Adjust padding as necessary */
+    display: inline-block;
+    user-select: none; /* Prevent text selection in this area */
+    cursor: pointer;
+}
+
+
 img {
     max-width: 100px;
 /*    cursor: pointer;

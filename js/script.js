@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Website loaded successfully!");
 });
 
-document.body.addEventListener('mousedown', function(event) {
-    event.preventDefault(); // Prevent text selection and dragging on the entire body
-});
+// Target only the logo element  // Get the logo container
+const logoContainer = document.querySelector('.logo-hit-area');
 
+// Prevent text selection and dragging only on the logo area
+logo.addEventListener('mousedown', function(event) {
+    event.preventDefault(); // Prevent text selection and dragging on the logo
+});
 
 // Wait until the page is fully loaded
 window.onload = function() {
