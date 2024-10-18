@@ -2,6 +2,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Website loaded successfully!");
 });
+
+document.body.addEventListener('mousedown', function(event) {
+    event.preventDefault(); // Prevent text selection and dragging on the entire body
+});
+
+
 // Wait until the page is fully loaded
 window.onload = function() {
     const logo = document.getElementById('logo'); // The logo image
