@@ -19,27 +19,19 @@ main {
     text-align: center;
 }
 
-
-
 /* Define the bounce animation */
 @keyframes bounce {
-    0% {
+    0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-30px); /* Bounce up */
     }
-    100% {
-        transform: translateY(0); /* Return to original position */
-    }
 }
 
 .bounce {
-    animation: bounce 0.8s /* infinite ease-in-out; */ 
+    animation: bounce 0.8s ease-in-out; 
 }
-
-
-
 
 img {
     max-width: 100px;
@@ -47,10 +39,6 @@ img {
     outline: none;
     user-select: none; /* Prevent text selection */
 }
-
-
-
-    
 
 footer {
     background-color: #333;

@@ -5,15 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
 // Wait until the page is fully loaded
 window.onload = function() {
     const logo = document.getElementById('logo'); // The logo image
+    let isBouncing = false; // Flag to track if the bounce is active
+
+ // Add event listeners to track when the bounce animation starts and ends
+    logo.addEventListener('animationstart', function() {
+        isBouncing = true; // Animation started
+    });
+
+    logo.addEventListener('animationend', function() {
+        isBouncing = false; // Animation ended
+    });
 
     // Add a click event listener to the logo image
     logo.addEventListener('click', function() {
-        // Toggle the 'bounce' class to start/stop the animation
+// Only toggle bounce if it's not already bouncing
+        if (!isBouncing) {
         logo.classList.toggle('bounce');
+        }
     });
-// Wait until the page is fully loaded
-//window.onload = function() {
-  //  const logo = document.getElementById('logo'); // The logo image
+
+  // Wait until the page is fully loaded
 
     // Function to create a particle explosion
     function explode(x, y) {
