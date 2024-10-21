@@ -34,13 +34,13 @@ main {
 }
 
 /* Prevent selection only on the logo */
-#logo {
+/*#logo {
     user-select: none;  /* Disable text selection on the logo */
     cursor: pointer;    /* Keep pointer cursor on hover */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;     /* Internet Explorer/Edge */
-}
+/*}
 
 /* Add padding around the logo to increase clickable area */
 .logo-hit-area {
@@ -71,6 +71,41 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+footer {
+    text-align: center;
+    font-family: Arial, sans-serif; /* Apply Arial font to the footer */
+  }
+
+footer nav ul {
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline; /* Display the list items in a single line */
+    margin-right: 20px; /* Add space between the links */
+}
+
+footer nav ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last link */
+}
+
+footer nav a {
+    text-decoration: none; /* Remove underline from the links */
+    color: #773; /* Set link color (kaki in this case) */
+}
+
+footer nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+footer p {
+    margin-top: 10px; /* Add space above the copyright text */
+    font-size: 0.2em; /* Slightly reduce the font size */
+}
+
 
 /* Style for explosion particles */
 .particle {

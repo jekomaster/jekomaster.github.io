@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 const logoContainer = document.querySelector('.logo-hit-area');
 
 // Prevent text selection and dragging only on the logo area
-logo.addEventListener('mousedown', function(event) {
-    event.preventDefault(); // Prevent text selection and dragging on the logo
-});
+// 
+//logo.addEventListener('mousedown', function(event) {
+//    event.preventDefault(); // Prevent text selection and dragging on the logo
+//});
 
 // Wait until the page is fully loaded
 window.onload = function() {
@@ -55,9 +56,9 @@ window.onload = function() {
             // Animate particle explosion
             gsap.to(particle, {
                 left: x + (Math.random() - 0.5) * 200 + 'px', // Random spread horizontally
-                top: y + (Math.random() - 0.5) * 200 + 'px',  // Random spread vertically
+                top: y + (Math.random() - 0.5) * 300 + 'px',  // Random spread vertically
                 scale: 0,      // Shrink particle
-                opacity: 0,    // Fade particle out
+                opacity: 1,    // Fade particle out
                 duration: 1,   // Animation duration
                 ease: 'power3.out',  // Easing for natural explosion effect
                 onComplete: () => particle.remove() // Remove particle after animation
