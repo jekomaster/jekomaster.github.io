@@ -10,19 +10,148 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
+
+
+
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Arch Linux_MacBook Pro 2014</h1>
+        <p> MacBook Pro11,1  1.0</p>
     </header>
 
     <main>
-        <p>This is a simple webpage hosted on GitHub Pages.</p>
+        <p>This is a simple webpage project for educationl purposes.</p>
           <div class="logo-hit-area">
             <img src="images/logo.png" alt="Logo" class="logo-animation" id="logo" draggable="false">
           </div>
+
+          <h1>Installing Arch Linux on a 2014 MacBook Pro</h1>
+<p align="center">This webpage project is a comprehensive guide
+detailing my personal experience</p>
+<p align="center">	and efforts in installing Arch Linux on a 2014
+MacBook Pro. This process can be 	</p>
+<p align="center">challenging, especially due to hardware-specific
+constraints on older MacBook models.</p>
+<p align="center">I’ve aimed to share useful insights, lessons
+learned, and solutions that may</p>
+<p align="center">help others facing similar obstacles.<br><br/>
+</p>
+<h2 class="western" align="center">The Major Challenge: No Built-in
+Ethernet Port</h2>
+<p align="center">One of the biggest hurdles for me—and for many
+others attempting this installation on a MacBook Pro from this era—is
+the absence of a built-in LAN (Ethernet) port. Installing Arch Linux
+typically requires a stable internet connection, especially during
+the installation phase when you need to download essential packages
+and system components.</p>
+<p align="center">Since this MacBook model only supports Wi-Fi for
+networking out of the box, two solutions are commonly considered:</p>
+<p align="center">
+<br/>
+
+</p>
+<ul>
+	<li><p align="justify" style="margin-bottom: 0in"><strong>Using a
+	USB-to-Ethernet Adapter</strong>: The easiest way to work around the
+	missing Ethernet port is by using a USB-to-Ethernet adapter. This
+	allows you to establish a wired network connection for downloading
+	packages during installation. While this seems straightforward, not
+	all adapters are plug-and-play on Linux. You might need to pre-load
+	drivers or ensure the adapter is recognized by the system before
+	starting the installation. 
+	</p>
+	<p align="justify" style="margin-bottom: 0in"></p></li>
+	<li><p align="justify" style="margin-bottom: 0in"><strong>Configuring
+	the Built-in Wi-Fi</strong>: The more complex, yet viable
+	alternative is setting up the Wi-Fi connection directly within the
+	Arch Linux installation environment. MacBooks, especially older
+	models like the 2014 version, often use proprietary Broadcom
+	wireless chips, which can make this process tricky. These chips
+	require proprietary drivers (such as <code>broadcom-wl</code> or
+	<code>b43-firmware</code>) to function correctly on Linux. 
+	  </p>
+
+
+
+    <img id="sourceImage" src="images/51dule3Up6L.jpg" alt="Image to be processed" class="resized-image" style="display:none;">
+    <canvas id="canvas"></canvas>
+
+  </li>
+
+    <!-- Link to the external JavaScript file -->
+    <!-- <script src="js/script.js"></script> -->
+	<ul>
+		<li><p align="justify" style="margin-bottom: 0in"><strong>Loading
+		Wi-Fi drivers</strong>: To get the Wi-Fi working during the Arch
+		installation, you may need to pre-download the necessary drivers
+		onto a USB drive or another storage device, then install them in
+		the live environment. 
+		</p>
+		<p align="justify" style="margin-bottom: 0in"></p></li>
+		<li><p align="justify"><strong>NetworkManager Setup</strong>: Once
+		the drivers are installed, using tools like <code>iwctl</code>
+		(part of <code>iwd</code>) or <code>NetworkManager</code> in the
+		live environment can help establish a Wi-Fi connection. This step
+		requires a bit of command-line work to scan for available networks,
+		connect, and verify the connection before proceeding with the
+		actual installation. 
+		</p></li>
+	</ul>
+</ul>
+<h2 class="western">Additional Technical Considerations</h2>
+<ul>
+	<li><p align="justify" style="margin-bottom: 0in"><strong>Partitioning
+	and macOS Coexistence</strong>: If you’re planning to dual-boot
+	Arch Linux alongside macOS, you'll need to manage your partitions
+	carefully. Tools like <code>gdisk</code> or <code>parted</code> are
+	essential for creating separate partitions for Arch without
+	disturbing your existing macOS installation. Additionally, ensuring
+	the use of the correct bootloader, such as <code>systemd-boot</code>
+	or <code>rEFInd</code>, is critical to maintaining a smooth
+	dual-boot setup. 
+	</p>
+	<p align="justify" style="margin-bottom: 0in"></p></li>
+	<li><p align="justify" style="margin-bottom: 0in"><strong>EFI and
+	UEFI Setup</strong>: MacBook Pros, starting from around 2011,
+	exclusively use the EFI bootloader instead of the traditional BIOS.
+	This means you’ll need to install Arch Linux in UEFI mode.
+	Configuring the bootloader correctly is key to booting into Arch
+	once the installation is complete. <code>systemd-boot</code> is a
+	solid choice for Arch, given its simplicity and UEFI compatibility,
+	and it works well with the MacBook’s hardware. 
+	</p>
+	<p align="justify" style="margin-bottom: 0in"></p></li>
+	<li><p style="margin-bottom: 0in"><strong>Dealing with
+	Apple-Specific Hardware</strong>: 
+	</p>
+	<ul>
+		<li><p align="justify" style="margin-bottom: 0in"><strong>Trackpad</strong>:
+		The MacBook Pro's multi-touch trackpad may require additional
+		drivers or tweaking. Packages like <code>xf86-input-mtrack</code>
+		can be installed to improve its functionality and support gestures
+		on Arch. 
+		</p>
+		<p align="justify" style="margin-bottom: 0in"></p></li>
+		<li><p align="justify" style="margin-bottom: 0in"><strong>Display
+		and Graphics</strong>: The MacBook’s Retina display might need
+		further configuration for optimal resolution and scaling. For
+		Intel-based models, the <code>intel</code> or <code>modesetting</code>
+		drivers should work, but additional settings in <code>Xorg</code>
+		might be required for better performance. 
+		</p>
+		<p></p></li>
+	</ul>
+</ul>
+<h2 class="western"><br/>
+<br/>
+
+</h2>
+</body>
+</html>
+  
+
            <!-- Link to the folder -->
         <p>
             <a href="data/doc.txt">Data Files</a> <!-- This links to the "data" folder -->
-        </p>
     </main>
 
     <footer>
@@ -30,7 +159,7 @@
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+<!--            <li><a href="portfolio.html">Portfolio</a></li> -->
         </ul>
     </nav>
         <p>© 2024 My Website. All rights reserved.</p>

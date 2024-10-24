@@ -33,6 +33,7 @@ main {
     animation: bounce 0.8s ease-in-out; 
 }
 
+/* Not needed 
 /* Prevent selection only on the logo */
 /*#logo {
     user-select: none;  /* Disable text selection on the logo */
@@ -62,12 +63,23 @@ img {
 /*    cursor: pointer; /* Ensures a pointer (hand) cursor on hover */
 }
 
+/* Style for explosion particles */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 80%;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Neon glow */
+}
+
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
+/*    position: absolute; */
     width: 100%;
     bottom: 0;
 }
@@ -107,12 +119,7 @@ footer p {
 }
 
 
-/* Style for explosion particles */
-.particle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: yellow;
-    border-radius: 80%;
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Neon glow */
-}
+
+
+
+
