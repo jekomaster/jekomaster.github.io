@@ -24,15 +24,15 @@
             <img src="images/logo.png" alt="Logo" class="logo-animation" id="logo" draggable="false">
           </div>
           <h1>Installing Arch Linux on a 2014 MacBook Pro</h1>
-<p align="justify">This webpage project is a comprehensive guide
+<p align="center">This webpage project is a comprehensive guide
 detailing my personal experience and efforts in installing Arch Linux
 on a 2014 MacBook Pro. This process can be challenging, especially
 due to hardware-specific constraints on older MacBook models.I’ve
 aimed to share useful insights, lessons learned, and solutions that
-may help others facing similar obstacles.</p><br></br>
+may help others facing similar obstacles.</p>
 <h2 class="western" align="center">The Major Challenge: No Built-in
 Ethernet Port</h2>
-<p align="justify">One of the biggest hurdles for me—and for many
+<p align="center">One of the biggest hurdles for me—and for many
 others attempting this installation on a MacBookPro from this era—is
 the absence of a built-in LAN (Ethernet) port. Installing Arch Linux
 typicallyrequires a stable internet connection, especially during the
@@ -44,17 +44,18 @@ networking out of the box, two solutions arecommonly considered:</p>
 
 </p>
 <ul>
-	<li><p align="justify" style="margin-bottom: 0in"><strong>Using a
-	USB-to-Ethernet Adapter</strong>: The easiest way to work around the
-	missing Ethernet port is by using a USB-to-Ethernet adapter. This
-	allows you to establish a wired network connection for downloading
-	packages during installation. While this seems straightforward, not
-	all adapters are plug-and-play on Linux. You might need to pre-load
-	drivers or ensure the adapter is recognized by the system before
-	starting the installation. 
+	<li><p align="left" style="line-height: 115%; margin-right: -0.25in; margin-bottom: 0in; background: transparent; page-break-before: auto">
+	<strong>Using a USB-to-Ethernet Adapter</strong>: The easiest way to
+	work around the missing Ethernet port is by using a USB-to-Ethernet
+	adapter. This allows you to establish a wired network connection for
+	downloading packages during installation. While this seems
+	straightforward, not all adapters are plug-and-play on Linux. You
+	might need to pre-load drivers or ensure the adapter is recognized
+	by the system before starting the installation. 
+    </p></br>
 	</p>
 	<p align="justify" style="margin-bottom: 0in"></p></li>
-	<li><p align="justify" style="margin-bottom: 0in"><strong>Configuring
+	<li><p align="left" style="margin-bottom: 0in"><strong>Configuring
 	the Built-in Wi-Fi</strong>: The more complex, yet viable
 	alternative is setting up the Wi-Fi connection directly within the
 	Arch Linux installation environment. MacBooks, especially older
@@ -62,34 +63,43 @@ networking out of the box, two solutions arecommonly considered:</p>
 	wireless chips, which can make this process tricky. These chips
 	require proprietary drivers (such as <code>broadcom-wl</code> or
 	<code>b43-firmware</code>) to function correctly on Linux. 
-	  </p>
+	</p></li>
+</ul>
 
 
     <img id="sourceImage" src="images/51dule3Up6L.jpg" alt="Image to be processed" class="resized-image" style="display:none;">
   <canvas id="canvas"></canvas>
   </li>
 
+		</p>
 	<ul>
-		<li><p align="justify" style="margin-bottom: 0in"><strong>Loading
+		<li><p align="left" style="margin-bottom: 0in"><strong>Loading
 		Wi-Fi drivers</strong>: To get the Wi-Fi working during the Arch
 		installation, you may need to pre-download the necessary drivers
 		onto a USB drive or another storage device, then install them in
 		the live environment. 
-		</p>
-		<p align="justify" style="margin-bottom: 0in"></p></li>
-		<li><p align="justify"><strong>NetworkManager Setup</strong>: Once
-		the drivers are installed, using tools like <code>iwctl</code>
-		(part of <code>iwd</code>) or <code>NetworkManager</code> in the
-		live environment can help establish a Wi-Fi connection. This step
+		</p></li>
+	</ul>
+</ul>
+<p align="left" style="margin-bottom: 0in"><br/>
+</p>
+<ul>
+	<ul>
+
+		<li><p align="left"><strong>NetworkManager Setup</strong>: Once the
+		drivers are installed, using tools like <code>iwctl</code> (part of
+		<code>iwd</code>) or <code>NetworkManager</code> in the live
+		environment can help establish a Wi-Fi connection. This step
 		requires a bit of command-line work to scan for available networks,
 		connect, and verify the connection before proceeding with the
 		actual installation. 
-		</p></li>
+      </p></br>
+		<p align="justify"></p></li>
 	</ul>
-</ul></br>
-<h2 class="western">Additional Technical Considerations</h2>
-<ul></br>
-	<li><p align="justify" style="margin-bottom: 0in"><strong>Partitioning
+</ul>
+<h3 class="western" align="left">Additional Technical Considerations</h3>
+<ul>
+	<li><p align="left" style="margin-bottom: 0in"><strong>Partitioning
 	and macOS Coexistence</strong>: If you’re planning to dual-boot
 	Arch Linux alongside macOS, you'll need to manage your partitions
 	carefully. Tools like <code>gdisk</code> or <code>parted</code> are
@@ -98,46 +108,47 @@ networking out of the box, two solutions arecommonly considered:</p>
 	the use of the correct bootloader, such as <code>systemd-boot</code>
 	or <code>rEFInd</code>, is critical to maintaining a smooth
 	dual-boot setup. 
+    </p></br>
+	<p align="left" style="margin-bottom: 0in"></p></li>
+	<li><p align="left" style="margin-bottom: 0in"><strong>EFI and UEFI
+	Setup</strong>: MacBook Pros, starting from around 2011, exclusively
+	use the EFI bootloader instead of the traditional BIOS. This means
+	you’ll need to install Arch Linux in UEFI mode. Configuring the
+	bootloader correctly is key to booting into Arch once the
+	installation is complete. <code>systemd-boot</code> is a solid
+	choice for Arch, given its simplicity and UEFI compatibility, and it
+	works well with the MacBook’s hardware. 
+	</p></li>
+</ul>
+<p align="left" style="margin-bottom: 0in"><br/>
+<ul>
+	<li style="display: block"><p align="left" style="margin-bottom: 0in">
+	<strong>Dealing with Apple-Specific Hardware</strong>: 
 	</p>
-	<p align="justify" style="margin-bottom: 0in"></p></li>
-	<li><p align="justify" style="margin-bottom: 0in"><strong>EFI and
-	UEFI Setup</strong>: MacBook Pros, starting from around 2011,
-	exclusively use the EFI bootloader instead of the traditional BIOS.
-	This means you’ll need to install Arch Linux in UEFI mode.
-	Configuring the bootloader correctly is key to booting into Arch
-	once the installation is complete. <code>systemd-boot</code> is a
-	solid choice for Arch, given its simplicity and UEFI compatibility,
-	and it works well with the MacBook’s hardware. 
-    </p></br>
-	<p align="justify" style="margin-bottom: 0in"></p></li>
-	<li><p style="margin-bottom: 0in"><strong>Dealing with
-	Apple-Specific Hardware</strong>: 
-    </p></br>
 	<ul>
-		<li><p align="justify" style="margin-bottom: 0in"><strong>Trackpad</strong>:
+		<li><p align="left" style="margin-bottom: 0in"><strong>Trackpad</strong>:
 		The MacBook Pro's multi-touch trackpad may require additional
 		drivers or tweaking. Packages like <code>xf86-input-mtrack</code>
 		can be installed to improve its functionality and support gestures
 		on Arch. 
-		</p>
-		<p align="justify" style="margin-bottom: 0in"></p></li>
-		<li><p align="justify" style="margin-bottom: 0in"><strong>Display
-		and Graphics</strong>: The MacBook’s Retina display might need
+		</p></li></br>
+	<ul>
+		<li><p align="left" style="margin-bottom: 0in"><strong>Display and
+		Graphics</strong>: The MacBook’s Retina display might need
 		further configuration for optimal resolution and scaling. For
 		Intel-based models, the <code>intel</code> or <code>modesetting</code>
 		drivers should work, but additional settings in <code>Xorg</code>
 		might be required for better performance. 
 		</p>
-		<p></p></li>
+		<p align="left"></p></li>
 	</ul>
 </ul>
-<h2 class="western"><br/>
+<h2 class="western" align="left"><br/>
 <br/>
 
 </h2>
 </body>
-</html>
-  
+</html>  
 
            <!-- Link to the folder -->
         <p>
