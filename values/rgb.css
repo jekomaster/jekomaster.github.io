@@ -1,0 +1,63 @@
+# RGB Color References for Scripts
+
+# Primary Colors
+red="rgb(255, 0, 0)"           # Red (solid)
+green="rgb(0, 255, 0)"         # Green (solid)
+blue="rgb(0, 0, 255)"          # Blue (solid)
+
+# Secondary Colors
+yellow="rgb(255, 255, 0)"      # Yellow (solid)
+cyan="rgb(0, 255, 255)"        # Cyan (solid)
+magenta="rgb(255, 0, 255)"     # Magenta (solid)
+
+# Grayscale Colors
+black="rgb(0, 0, 0)"           # Black
+white="rgb(255, 255, 255)"     # White
+light_gray="rgb(211, 211, 211)" # Light Gray
+dark_gray="rgb(169, 169, 169)"  # Dark Gray
+
+# Common Colors
+orange="rgb(255, 165, 0)"      # Orange (solid)
+purple="rgb(128, 0, 128)"      # Purple (solid)
+pink="rgb(255, 192, 203)"      # Pink (solid)
+teal="rgb(0, 128, 128)"        # Teal (solid)
+gold="rgb(255, 215, 0)"        # Gold (solid)
+silver="rgb(192, 192, 192)"    # Silver (solid)
+
+# Neon/Glowing Colors
+neon_green="rgb(57, 255, 20)"  # Neon Green
+neon_pink="rgb(255, 20, 147)"  # Neon Pink
+neon_blue="rgb(0, 255, 255)"   # Neon Blue (Cyan)
+neon_yellow="rgb(255, 255, 0)" # Neon Yellow
+neon_orange="rgb(255, 140, 0)" # Neon Orange
+
+# Gold and Yellow Variations
+soft_yellow="rgb(255, 204, 0)"   # Golden Yellow
+bright_yellow="rgb(255, 255, 102)"  # Bright Yellow
+dark_gold="rgb(218, 165, 32)"   # Dark Gold
+
+# Blue Variations
+royal_blue="rgb(65, 105, 225)"  # Royal Blue
+deep_sky_blue="rgb(0, 191, 255)"  # Deep Sky Blue
+dodger_blue="rgb(30, 144, 255)"   # Dodger Blue
+
+# Green Variations
+lime_green="rgb(50, 205, 50)"  # Lime Green
+forest_green="rgb(34, 139, 34)"  # Forest Green
+sea_green="rgb(46, 139, 87)"   # Sea Green
+
+# Red Variations
+crimson="rgb(220, 20, 60)"     # Crimson
+firebrick="rgb(178, 34, 34)"   # Firebrick
+dark_red="rgb(139, 0, 0)"      # Dark Red
+
+# Purple Variations
+orchid="rgb(218, 112, 214)"    # Orchid
+medium_purple="rgb(147, 112, 219)" # Medium Purple
+violet="rgb(238, 130, 238)"    # Violet
+
+# Brown Variations
+saddle_brown="rgb(139, 69, 19)"  # Saddle Brown
+sienna="rgb(160, 82, 45)"      # Sienna
+chocolate="rgb(210, 105, 30)"  # Chocolate
+

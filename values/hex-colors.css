@@ -1,0 +1,45 @@
+# Hex Color Codes Reference (with Neon Colors)
+# Format: #RRGGBB (Red, Green, Blue in hexadecimal)
+
+# Standard Colors
+hex_red="#ff0000"          # Bright Red
+hex_green="#00ff00"        # Bright Green
+hex_blue="#0000ff"         # Bright Blue
+hex_yellow="#ffff00"       # Bright Yellow
+hex_orange="#ffa500"       # Orange
+hex_purple="#800080"       # Purple
+hex_pink="#ff69b4"         # Pink
+hex_cyan="#00ffff"         # Cyan
+hex_magenta="#ff00ff"      # Magenta
+hex_lime="#32cd32"         # Lime Green
+hex_silver="#c0c0c0"       # Silver
+hex_gray="#808080"         # Gray
+hex_maroon="#800000"       # Maroon
+hex_olive="#808000"        # Olive
+hex_brown="#a52a2a"        # Brown
+hex_navy="#000080"         # Navy Blue
+hex_gold="#ffd700"         # Gold
+hex_light_blue="#add8e6"   # Light Blue
+hex_dark_blue="#00008b"    # Dark Blue
+hex_light_green="#90ee90"  # Light Green
+hex_dark_green="#006400"   # Dark Green
+hex_black="#000000"        # Black
+hex_white="#ffffff"        # White
+
+# Neon Colors
+hex_neon_red="#ff073a"        # Neon Red
+hex_neon_green="#39ff14"      # Neon Green
+hex_neon_blue="#1b03a3"       # Neon Blue
+hex_neon_yellow="#ccff00"     # Neon Yellow
+hex_neon_orange="#ff6700"     # Neon Orange
+hex_neon_purple="#9400d3"     # Neon Purple
+hex_neon_pink="#ff6ec7"       # Neon Pink
+hex_neon_cyan="#0ff"          # Neon Cyan
+hex_neon_magenta="#ff00ff"    # Neon Magenta
+hex_neon_lime="#39ff14"       # Neon Lime
+hex_neon_turquoise="#00f5ff"  # Neon Turquoise
+hex_neon_violet="#8a2be2"     # Neon Violet
+
+# Example usage in CSS or JS scripts:
+# background-color: $hex_neon_green;  # Assigning neon green color
+

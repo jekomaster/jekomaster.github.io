@@ -1,7 +1,7 @@
 import { applyBouncingEffect } from './bouncing.js';
 import { explode } from './particles.js';
 import { preventLogoSelectionAndDragging } from './logo.js';
-import { removeWhiteBackground } from './background.js';
+//import { removeWhiteBackground } from './background.js';
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Website loaded successfully!");
@@ -26,5 +26,16 @@ window.addEventListener("load", function() {
 
     // Prevent text selection and dragging on the logo
     preventLogoSelectionAndDragging();
+});
+window.addEventListener("load", () => {
+  const img = document.getElementById("sourceImage");
+  const canvas = document.getElementById("canvas");
+  
+  // Wait for the image to load to get accurate dimensions
+  img.onload = function() {
+    // Set canvas dimensions based on the image
+    canvas.width = img.clientWidth;
+    canvas.height = img.clientHeight;
+  };
 });
 

@@ -1,0 +1,24 @@
+/* Ensure normal arrow cursor on hover */
+#sourceImage {
+    cursor: default; /* This forces the cursor to stay as the default pointer */
+}
+/* Ensure normal arrow cursor on the container and transparent areas */
+.logo-hit-area {
+    cursor: default; /* Ensures arrow cursor over the whole container, including image's transparent areas */
+}
+
+/*Explanation:
+By applying cursor: default; 
+to both the image (#sourceImage) and its container (.logo-hit-area),
+you ensure that the cursor stays as the default arrow, 
+even when it hovers over the transparent portions of the image.*/
+
+
+.resized-image {
+    max-width: 280px; /* Set maximum width */
+    width: 100%;      /* Allow scaling based on parent container */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Make the image a block element */
+    margin: 20px auto; /* Center the image horizontally */
+}
+

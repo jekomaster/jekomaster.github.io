@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/glow-button.css">
+    <link rel="stylesheet" href="css/img.css">
+
     <!--   <link rel="stylesheet" href="css/blend-image.css"> -->
  <!-- Gsap library from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -66,12 +69,11 @@ networking out of the box, two solutions arecommonly considered:</p>
 	<code>b43-firmware</code>) to function correctly on Linux. 
 	</p></li>
 </ul>
-
-
-    <img id="sourceImage" src="images/51dule3Up6L.jpg" alt="Image to be processed" class="resized-image" style="display:none;">
-  <canvas id="canvas"></canvas>
+    <div class="logo-hit-area">
+     <img id="sourceImage" src="images/bcm4360.png" class="resized-image" draggable="false">
+    </div>
+    <!-- <canvas id="canvas"></canvas>    -->
   </li>
-
 		</p>
 	<ul>
 		<li><p align="left" style="margin-bottom: 0in"><strong>Loading
@@ -86,7 +88,6 @@ networking out of the box, two solutions arecommonly considered:</p>
 </p>
 <ul>
 	<ul>
-
 		<li><p align="left"><strong>NetworkManager Setup</strong>: Once the
 		drivers are installed, using tools like <code>iwctl</code> (part of
 		<code>iwd</code>) or <code>NetworkManager</code> in the live
@@ -170,14 +171,17 @@ The most logical solution for me was to create a custom Arch ISO installer with 
 </ul>
 <h2 class="western" align="left"><br/>
 <br/>
- <h1>Here it is how</h1>
 </h2>
+ <div class="button-container">
+        <a href="nextpage.html" class="glow-button">
+            <span>Here it is how</span>
+        </a>
+    </div>
 </body>
-</html>  
-
-           <!-- Link to the folder -->
-        <p>
-            <a href="data/doc.txt">Data Files</a> <!-- This links to the "data" folder -->
+</html>
+             <!-- Link to the folder -->
+             <!-- <p>
+           <a href="data/doc.txt">Data Files</a> --This links to the "data" folder -->
     </main>
 
     <footer>

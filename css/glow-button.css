@@ -1,0 +1,91 @@
+/*body {
+    background-color: #000; /* Dark background for contrast */
+/*    display: flex;
+
+/* General body styling 
+body {
+    background-color: #000; /* Dark background color for contrast (black) */
+/*    display: flex; /* Flexbox layout to center the button */
+/*    justify-content: center; /* Horizontally centers the button */
+/*    align-items: center; /* Vertically centers the button */
+/*    height: 100vh; /* Full viewport height */
+/*    margin: 0; /* Remove default margins */
+/*    font-family: Arial, sans-serif; /* Apply a standard font */
+/*} 
+
+/* Container for centering the button */
+.button-container {
+    text-align: center; /* Centers the text inside the container */
+}
+
+/* Styling for the button */
+.glow-button {
+    display: inline-block; /* Makes the button behave like an inline block */
+    
+    /* Gradient background color - you can change the colors here */
+   background: linear-gradient(135deg, #0ff, #cc33ff); /* A colorful gradient: yellow, pink, and purple */
+    :white-space: nowrap;
+    padding: 15px 40px; /* Padding around the button text, first value is vertical (top/bottom), second is horizontal (left/right) */
+    
+    border-radius: 50px; /* Makes the button rounded */
+    
+    font-size: 24px; /* Size of the button text */
+    
+    color: #fff; /* White text color */
+    
+    text-decoration: none; /* Remove the underline from the button link */
+    
+    /* Shadow around the button - customize for different glow colors */
+/*    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.8), /* Yellow glow */
+/*                0px 6px 20px rgba(204, 51, 255, 0.8); /* Purple glow */
+    
+/*    position: relative; /* Required for the glow effect */
+    
+    /* Transition for smooth effects when hovering */
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover state for the button - when a user moves the cursor over it */
+.glow-button:hover {
+    transform: scale(1.05); /* Slightly enlarges the button when hovered */
+    
+    /* Make the shadow stronger on hover */
+    box-shadow: 0px 8px 25px rgba(255, 204, 0, 1), /* Brighter yellow */
+                0px 12px 30px rgba(204, 51, 255, 1); /* Brighter purple */
+}
+
+/* Text inside the button */
+.glow-button span {
+    position: relative; /* To ensure the text stays above the background effects */
+    z-index: 1; /* Ensures the text is above the glow background */
+}
+
+/* Glow effect around the button */
+/*.glow-button::before {
+    content: ''; /* Creates an empty element before the button to hold the glow effect */
+    
+/*    position: absolute; /* Absolutely positions it relative to the button */
+/*    top: 0; /* Aligns to the top of the button */
+/*    left: 0; /* Aligns to the left of the button */
+    
+/*    width: 100%; /* Full width of the button */
+/*    height: 100%; /* Full height of the button */
+    
+/*    border-radius: 50px; /* Matches the rounded corners of the button */
+    
+    /* Creates a radial glow effect */
+/*    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), transparent 50%);
+    
+    filter: blur(10px); /* Blurs the glow effect to create a smooth shine */
+    
+/*    z-index: 0; /* Places this behind the text but on top of the button */
+    
+/*    transition: opacity 0.3s ease; /* Smooth transition for the glow when hovering */
+/*}
+
+/* Change the glow's opacity when the button is hovered */
+/*.glow-button:hover::before {
+    opacity: 0.8; /* Makes the glow more visible on hover */
+/*}
+
+

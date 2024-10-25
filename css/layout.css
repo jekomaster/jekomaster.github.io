@@ -97,8 +97,6 @@ footer p {
     font-size: 0.8em; /* Corrected font size */
 }
 
-canvas {
-    background-color: #fff; /* Add a white background to visualize */
-    mix-blend-mode: multiply;
-}
+
+
 

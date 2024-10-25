@@ -1,0 +1,69 @@
+# RGBA Color References for Scripts
+
+# Primary Colors
+red="rgba(255, 0, 0, 1)"           # Red (solid)
+green="rgba(0, 255, 0, 1)"         # Green (solid)
+blue="rgba(0, 0, 255, 1)"          # Blue (solid)
+
+# Secondary Colors
+yellow="rgba(255, 255, 0, 1)"      # Yellow (solid)
+cyan="rgba(0, 255, 255, 1)"        # Cyan (solid)
+magenta="rgba(255, 0, 255, 1)"     # Magenta (solid)
+
+# Grayscale Colors
+black="rgba(0, 0, 0, 1)"           # Black
+white="rgba(255, 255, 255, 1)"     # White
+light_gray="rgba(211, 211, 211, 1)" # Light Gray
+dark_gray="rgba(169, 169, 169, 1)"  # Dark Gray
+
+# Common Colors
+orange="rgba(255, 165, 0, 1)"      # Orange (solid)
+purple="rgba(128, 0, 128, 1)"      # Purple (solid)
+pink="rgba(255, 192, 203, 1)"      # Pink (solid)
+teal="rgba(0, 128, 128, 1)"        # Teal (solid)
+gold="rgba(255, 215, 0, 1)"        # Gold (solid)
+silver="rgba(192, 192, 192, 1)"    # Silver (solid)
+
+# Neon/Glowing Colors
+neon_green="rgba(57, 255, 20, 1)"  # Neon Green
+neon_pink="rgba(255, 20, 147, 1)"  # Neon Pink
+neon_blue="rgba(0, 255, 255, 1)"   # Neon Blue (Cyan)
+neon_yellow="rgba(255, 255, 0, 1)" # Neon Yellow
+neon_orange="rgba(255, 140, 0, 1)" # Neon Orange
+
+# Transparent Variations
+semi_transparent_red="rgba(255, 0, 0, 0.5)"    # 50% Transparent Red
+semi_transparent_blue="rgba(0, 0, 255, 0.5)"   # 50% Transparent Blue
+light_transparent_black="rgba(0, 0, 0, 0.2)"   # 20% Transparent Black
+light_transparent_white="rgba(255, 255, 255, 0.2)" # 20% Transparent White
+
+# Gold and Yellow Variations
+soft_yellow="rgba(255, 204, 0, 1)"   # Golden Yellow
+bright_yellow="rgba(255, 255, 102, 1)"  # Bright Yellow
+dark_gold="rgba(218, 165, 32, 1)"   # Dark Gold
+
+# Blue Variations
+royal_blue="rgba(65, 105, 225, 1)"  # Royal Blue
+deep_sky_blue="rgba(0, 191, 255, 1)"  # Deep Sky Blue
+dodger_blue="rgba(30, 144, 255, 1)"   # Dodger Blue
+
+# Green Variations
+lime_green="rgba(50, 205, 50, 1)"  # Lime Green
+forest_green="rgba(34, 139, 34, 1)"  # Forest Green
+sea_green="rgba(46, 139, 87, 1)"   # Sea Green
+
+# Red Variations
+crimson="rgba(220, 20, 60, 1)"     # Crimson
+firebrick="rgba(178, 34, 34, 1)"   # Firebrick
+dark_red="rgba(139, 0, 0, 1)"      # Dark Red
+
+# Purple Variations
+orchid="rgba(218, 112, 214, 1)"    # Orchid
+medium_purple="rgba(147, 112, 219, 1)" # Medium Purple
+violet="rgba(238, 130, 238, 1)"    # Violet
+
+# Brown Variations
+saddle_brown="rgba(139, 69, 19, 1)"  # Saddle Brown
+sienna="rgba(160, 82, 45, 1)"      # Sienna
+chocolate="rgba(210, 105, 30, 1)"  # Chocolate
+
