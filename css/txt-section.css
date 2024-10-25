@@ -1,0 +1,8 @@
+/* CSS to style the specific section below the header */
+.intro-text {
+    margin-top: -30px; /* Adjusts how close this text is to the header */
+    font-size: 0.9em; /* Adjusts font size only for this section (smaller size) */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    padding: 0 10px; /* Optional padding to adjust space around text */
+}
+
