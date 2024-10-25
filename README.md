@@ -10,35 +10,6 @@ The content of this website I will be working on is a comprehensive guide detail
 
 One of the biggest hurdles for me—and for many others attempting this installation on a MacBook Pro from this era—is the absence of a built-in LAN (Ethernet) port. Installing Arch Linux typically requires a stable internet connection, especially during the installation phase when you need to download essential packages and system components. Since this MacBook model only supports Wi-Fi for networking out of the box, two solutions are commonly considered:
 
----
----
----
-    ___          ___           ___           ___           ___     
-   /  /\        /  /\         /__/|         /  /\         /__/\    
-  /  /:/       /  /:/_       |  |:|        /  /::\       |  |::\   
- /__/::\      /  /:/ /\      |  |:|       /  /:/\:\      |  |:|:\  
- \__\/\:\    /  /:/ /:/_   __|  |:|      /  /:/  \:\   __|__|:|\:\ 
-    \  \:\  /__/:/ /:/ /\ /__/\_|:|____ /__/:/ \__\:\ /__/::::| \:\
-     \__\:\ \  \:\/:/ /:/ \  \:\/:::::/ \  \:\ /  /:/ \  \:\~~\__\/
-     /  /:/  \  \::/ /:/   \  \::/~~~~   \  \:\  /:/   \  \:\      
-    /__/:/    \  \:\/:/     \  \:\        \  \:\/:/     \  \:\     
-    \__\/      \  \::/       \  \:\        \  \::/       \  \:\    
-                \__\/         \__\/         \__\/         \__\/    
-      ___           ___                       ___           ___     
-     /  /\         /  /\          ___        /  /\         /  /\    
-    /  /::\       /  /:/_        /  /\      /  /:/_       /  /::\   
-   /  /:/\:\     /  /:/ /\      /  /:/     /  /:/ /\     /  /:/\:\  
-  /  /:/~/::\   /  /:/ /::\    /  /:/     /  /:/ /:/_   /  /:/~/:/  
- /__/:/ /:/\:\ /__/:/ /:/\:\  /  /::\    /__/:/ /:/ /\ /__/:/ /:/___
- \  \:\/:/__\/ \  \:\/:/~/:/ /__/:/\:\   \  \:\/:/ /:/ \  \:\/:::::/
-  \  \::/       \  \::/ /:/  \__\/  \:\   \  \::/ /:/   \  \::/~~~~ 
-   \  \:\        \__\/ /:/        \  \:\   \  \:\/:/     \  \:\     
-    \  \:\         /__/:/          \__\/    \  \::/       \  \:\    
-     \__\/         \__\/                     \__\/         \__\/   
----
----
----
-
 
 ### 1. Using a USB-to-Ethernet Adapter
 The easiest way to work around the missing Ethernet port is by using a USB-to-Ethernet adapter. This allows you to establish a wired network connection for downloading packages during installation. While this seems straightforward, not all adapters are plug-and-play on Linux. You might need to pre-load drivers or ensure the adapter is recognized by the system before starting the installation.
