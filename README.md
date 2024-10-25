@@ -4,13 +4,41 @@
 
 This is a simple webpage project, built entirely from scratch without the use of GUI editors or website builders. Everything was manually coded in HTML, CSS, and JavaScript. It is hosted on GitHub for educational purposes, showcasing how a basic website is structured, how the layout is styled with CSS, and how JavaScript is used to create interactive features and special effects.
 
-## Visit the GitHub Repository
-
 The content of this website I will be working on is a comprehensive guide detailing my personal experience and efforts in installing Arch Linux on a 2014 MacBook Pro. This process can be challenging, especially due to hardware-specific constraints on older MacBook models. I’ve aimed to share useful insights, lessons learned, and solutions that may help others facing similar obstacles.
 
 ## The Major Challenge: No Built-in Ethernet Port
 
 One of the biggest hurdles for me—and for many others attempting this installation on a MacBook Pro from this era—is the absence of a built-in LAN (Ethernet) port. Installing Arch Linux typically requires a stable internet connection, especially during the installation phase when you need to download essential packages and system components. Since this MacBook model only supports Wi-Fi for networking out of the box, two solutions are commonly considered:
+
+---
+---
+---
+    ___          ___           ___           ___           ___     
+   /  /\        /  /\         /__/|         /  /\         /__/\    
+  /  /:/       /  /:/_       |  |:|        /  /::\       |  |::\   
+ /__/::\      /  /:/ /\      |  |:|       /  /:/\:\      |  |:|:\  
+ \__\/\:\    /  /:/ /:/_   __|  |:|      /  /:/  \:\   __|__|:|\:\ 
+    \  \:\  /__/:/ /:/ /\ /__/\_|:|____ /__/:/ \__\:\ /__/::::| \:\
+     \__\:\ \  \:\/:/ /:/ \  \:\/:::::/ \  \:\ /  /:/ \  \:\~~\__\/
+     /  /:/  \  \::/ /:/   \  \::/~~~~   \  \:\  /:/   \  \:\      
+    /__/:/    \  \:\/:/     \  \:\        \  \:\/:/     \  \:\     
+    \__\/      \  \::/       \  \:\        \  \::/       \  \:\    
+                \__\/         \__\/         \__\/         \__\/    
+      ___           ___                       ___           ___     
+     /  /\         /  /\          ___        /  /\         /  /\    
+    /  /::\       /  /:/_        /  /\      /  /:/_       /  /::\   
+   /  /:/\:\     /  /:/ /\      /  /:/     /  /:/ /\     /  /:/\:\  
+  /  /:/~/::\   /  /:/ /::\    /  /:/     /  /:/ /:/_   /  /:/~/:/  
+ /__/:/ /:/\:\ /__/:/ /:/\:\  /  /::\    /__/:/ /:/ /\ /__/:/ /:/___
+ \  \:\/:/__\/ \  \:\/:/~/:/ /__/:/\:\   \  \:\/:/ /:/ \  \:\/:::::/
+  \  \::/       \  \::/ /:/  \__\/  \:\   \  \::/ /:/   \  \::/~~~~ 
+   \  \:\        \__\/ /:/        \  \:\   \  \:\/:/     \  \:\     
+    \  \:\         /__/:/          \__\/    \  \::/       \  \:\    
+     \__\/         \__\/                     \__\/         \__\/   
+---
+---
+---
+
 
 ### 1. Using a USB-to-Ethernet Adapter
 The easiest way to work around the missing Ethernet port is by using a USB-to-Ethernet adapter. This allows you to establish a wired network connection for downloading packages during installation. While this seems straightforward, not all adapters are plug-and-play on Linux. You might need to pre-load drivers or ensure the adapter is recognized by the system before starting the installation.
@@ -19,7 +47,7 @@ The easiest way to work around the missing Ethernet port is by using a USB-to-Et
 The more complex, yet viable alternative is setting up the Wi-Fi connection directly within the Arch Linux installation environment. MacBooks, especially older models like the 2014 version, often use proprietary Broadcom wireless chips, which can make this process tricky. These chips require proprietary drivers (such as broadcom-wl or b43-firmware) to function correctly on Linux.
 
 #### Loading Wi-Fi Drivers
-To get the Wi-Fi working during the Arch installation, you may need to pre-download the necessary drivers onto a USB drive or another storage device, then install them in the live environment.
+Loading Wi-Fi drivers: To get the Wi-Fi working during the Arch installation, you have some options; to pre-download the necessary drivers onto a USB drive or another storage device (usb-drive), repository method. then install them in thelive environment. Second and effective solution, to burn a custom iso installer with the drivers loaded in it.
 
 #### NetworkManager Setup
 Once the drivers are installed, using tools like `iwctl` (part of `iwd`) or `NetworkManager` in the live environment can help establish a Wi-Fi connection. This step requires a bit of command-line work to scan for available networks, connect, and verify the connection before proceeding with the actual installation.
