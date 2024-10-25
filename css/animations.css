@@ -1,0 +1,25 @@
+/* animations.css */
+/* Define the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px); /* Bounce up */
+    }
+}
+
+.bounce {
+    animation: bounce 0.8s ease-in-out;
+}
+
+/* Style for explosion particles */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 80%;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+

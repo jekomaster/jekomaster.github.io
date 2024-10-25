@@ -1,0 +1,27 @@
+
+/* Container for the image with overlay */
+.overlay-container {
+
+/* Container for the blended image */
+.blend-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.blend-container img {
+    width: 300px;
+    height: auto;
+    mix-blend-mode: lighten; /* or overlay, darken, lighten */
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Optional: shadow for depth */
+    border-radius: 8px;
+}
+/* Optional: Adding a slight shadow or border to separate the image more clearly */
+.blend-container img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Optional shadow for depth */
+    border-radius: 8px; /* Optional: rounding corners */
+}
+
+

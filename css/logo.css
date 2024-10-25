@@ -1,0 +1,14 @@
+/* logo.css */
+/* Add padding around the logo to increase clickable area */
+.logo-hit-area {
+    padding: 10px;
+    display: inline-block;
+    user-select: none; /* Prevent text selection */
+    cursor: pointer;
+}
+
+img {
+    max-width: 100px;
+    cursor: pointer;
+}
+

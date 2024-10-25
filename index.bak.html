@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/logo.css">
-    <link rel="stylesheet" href="css/utils.css">
-    <!--   <link rel="stylesheet" href="css/blend-image.css"> -->
- <!-- Gsap library from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>My Website</title>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-10-25T00:11:04.739916226"/>
+	<meta name="" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		p { color: #333333; font-family: "Arial", sans-serif; line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		h1 { color: #333333; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "DejaVu Sans"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "DejaVu Sans"; font-size: 24pt; font-weight: bold }
+		h2 { color: #333333; margin-top: 0.14in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Serif", serif; font-size: 18pt; font-weight: bold }
+		h2.cjk { font-family: "DejaVu Sans"; font-size: 18pt; font-weight: bold }
+		h2.ctl { font-family: "DejaVu Sans"; font-size: 18pt; font-weight: bold }
+		strong { font-weight: bold }
+		code { font-family: "Liberation Mono", monospace }
+		a:link { color: #000080; text-decoration: underline }
+		a:visited { color: #800000; text-decoration: underline }
+	</style>
 </head>
-<body>
-    <header>
-        <h1>Arch Linux_MacBook Pro 2014</h1>
-        <p> MacBook Pro11,1  1.0</p>
-    </header>
-
-    <main>
-        <p>This is a simple webpage project for educationl purposes.</p>
-          <div class="logo-hit-area"id="logo-container">
-            <img src="images/logo.png" alt="Logo" class="logo-animation" id="logo" draggable="false">
-          </div>
-          <h1>Installing Arch Linux on a 2014 MacBook Pro</h1>
+<body lang="en-US" text="#333333" link="#000080" vlink="#800000" bgcolor="#f0f0f0" dir="ltr"><h1 class="western" align="center">
+Installing Arch Linux on a 2014 MacBook Pro</h1>
 <p align="justify">This webpage project is a comprehensive guide
 detailing my personal experience and efforts in installing Arch Linux
 on a 2014 MacBook Pro. This process can be challenging, especially
 due to hardware-specific constraints on older MacBook models.I’ve
 aimed to share useful insights, lessons learned, and solutions that
-may help others facing similar obstacles.</p><br></br>
+may help others facing similar obstacles.</p>
 <h2 class="western" align="center">The Major Challenge: No Built-in
 Ethernet Port</h2>
 <p align="justify">One of the biggest hurdles for me—and for many
@@ -44,14 +47,16 @@ networking out of the box, two solutions arecommonly considered:</p>
 
 </p>
 <ul>
-	<li><p align="justify" style="margin-bottom: 0in"><strong>Using a
-	USB-to-Ethernet Adapter</strong>: The easiest way to work around the
-	missing Ethernet port is by using a USB-to-Ethernet adapter. This
-	allows you to establish a wired network connection for downloading
-	packages during installation. While this seems straightforward, not
-	all adapters are plug-and-play on Linux. You might need to pre-load
-	drivers or ensure the adapter is recognized by the system before
-	starting the installation. 
+	<li><p align="justify" style="line-height: 115%; margin-right: -0.25in; margin-bottom: 0in; background: transparent; page-break-before: auto">
+	<strong>Using a USB-to-Ethernet Adapter</strong>: The easiest way to
+	work around the missing Ethernet port is by using a USB-to-Ethernet
+	adapter. This allows you to establish a wired network connection for
+	downloading packages during installation. While this seems
+	straightforward, not all adapters are plug-and-play on Linux. You
+	might need to pre-load drivers or ensure the adapter is recognized
+	by the system before starting the installation. 
+	</p>
+	<p align="justify" style="line-height: 115%; margin-right: -0.25in; margin-bottom: 0in; background: transparent">
 	</p>
 	<p align="justify" style="margin-bottom: 0in"></p></li>
 	<li><p align="justify" style="margin-bottom: 0in"><strong>Configuring
@@ -62,21 +67,31 @@ networking out of the box, two solutions arecommonly considered:</p>
 	wireless chips, which can make this process tricky. These chips
 	require proprietary drivers (such as <code>broadcom-wl</code> or
 	<code>b43-firmware</code>) to function correctly on Linux. 
-	  </p>
+	</p></li>
+</ul>
+<p align="justify" style="margin-bottom: 0in"><br/>
 
-
-    <img id="sourceImage" src="images/51dule3Up6L.jpg" alt="Image to be processed" class="resized-image" style="display:none;">
-  <canvas id="canvas"></canvas>
-  </li>
-
+</p>
+<ul>
+	<li style="display: block"><p align="justify" style="margin-bottom: 0in">
+	</p>
 	<ul>
 		<li><p align="justify" style="margin-bottom: 0in"><strong>Loading
 		Wi-Fi drivers</strong>: To get the Wi-Fi working during the Arch
 		installation, you may need to pre-download the necessary drivers
 		onto a USB drive or another storage device, then install them in
 		the live environment. 
-		</p>
-		<p align="justify" style="margin-bottom: 0in"></p></li>
+		</p></li>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<ul>
+	<ul>
 		<li><p align="justify"><strong>NetworkManager Setup</strong>: Once
 		the drivers are installed, using tools like <code>iwctl</code>
 		(part of <code>iwd</code>) or <code>NetworkManager</code> in the
@@ -84,11 +99,12 @@ networking out of the box, two solutions arecommonly considered:</p>
 		requires a bit of command-line work to scan for available networks,
 		connect, and verify the connection before proceeding with the
 		actual installation. 
-		</p></li>
+		</p>
+		<p align="justify"></p></li>
 	</ul>
-</ul></br>
+</ul>
 <h2 class="western">Additional Technical Considerations</h2>
-<ul></br>
+<ul>
 	<li><p align="justify" style="margin-bottom: 0in"><strong>Partitioning
 	and macOS Coexistence</strong>: If you’re planning to dual-boot
 	Arch Linux alongside macOS, you'll need to manage your partitions
@@ -108,19 +124,41 @@ networking out of the box, two solutions arecommonly considered:</p>
 	once the installation is complete. <code>systemd-boot</code> is a
 	solid choice for Arch, given its simplicity and UEFI compatibility,
 	and it works well with the MacBook’s hardware. 
-    </p></br>
-	<p align="justify" style="margin-bottom: 0in"></p></li>
+	</p></li>
+</ul>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<ul>
 	<li><p style="margin-bottom: 0in"><strong>Dealing with
 	Apple-Specific Hardware</strong>: 
-    </p></br>
+	</p>
 	<ul>
 		<li><p align="justify" style="margin-bottom: 0in"><strong>Trackpad</strong>:
 		The MacBook Pro's multi-touch trackpad may require additional
 		drivers or tweaking. Packages like <code>xf86-input-mtrack</code>
 		can be installed to improve its functionality and support gestures
 		on Arch. 
-		</p>
-		<p align="justify" style="margin-bottom: 0in"></p></li>
+		</p></li>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in"><br/>
+
+</p>
+<ul>
+	<ul>
 		<li><p align="justify" style="margin-bottom: 0in"><strong>Display
 		and Graphics</strong>: The MacBook’s Retina display might need
 		further configuration for optimal resolution and scaling. For
@@ -135,29 +173,5 @@ networking out of the box, two solutions arecommonly considered:</p>
 <br/>
 
 </h2>
-</body>
-</html>
-  
-
-           <!-- Link to the folder -->
-        <p>
-            <a href="data/doc.txt">Data Files</a> <!-- This links to the "data" folder -->
-    </main>
-
-    <footer>
-       <nav>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-<!--            <li><a href="portfolio.html">Portfolio</a></li> -->
-        </ul>
-    </nav>
-        <p>© 2024 My Website. All rights reserved.</p>
-    </footer>
-
-    <script type="module" src="js/main.js"></script>
-      <script src="js/dark-mode.js"></script>
-
-
 </body>
 </html>

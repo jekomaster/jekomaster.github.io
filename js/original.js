@@ -137,5 +137,26 @@ function resizeCanvasAfterModification() {
     ctx.drawImage(tempCanvas, 0, 0, canvas.width, canvas.height);
 }
 
-// canvas.width = 400 + padding * 2; // Add padding to both sides
-//    canvas.height = 400 + padding * 2; // Add padding to top and bottom
+
+
+window.addEventListener("load", function() {
+    const logoContainer = document.getElementById('logo-container');
+    const logo = document.getElementById('logo');
+
+    // Prevent text selection and dragging on the container and the logo
+    logoContainer.addEventListener('mousedown', function(event) {
+        event.preventDefault(); // Prevent text selection in the container
+    });
+
+    logo.addEventListener('mousedown', function(event) {
+        event.preventDefault(); // Prevent text selection on the logo
+    });
+
+    logo.addEventListener('dragstart', function(event) {
+        event.preventDefault(); // Prevent dragging of the logo
+    });
+
+    // Ensure the logo is non-draggable
+    logo.setAttribute('draggable', false);
+});
+

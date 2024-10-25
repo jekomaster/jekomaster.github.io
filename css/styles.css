@@ -118,8 +118,11 @@ footer p {
     font-size: 0.2em; /* Slightly reduce the font size */
 }
 
-
-
+/* Prevent selection and dragging for the logo */
+#logo-container {
+    margin: 0; /* Ensure no extra margin around the container */
+    padding: 0; /* Ensure no extra padding */
+}
 
 
 
