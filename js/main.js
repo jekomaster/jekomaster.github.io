@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
     });
 
     // Automatically remove white background and resize canvas
-    removeWhiteBackground();
+    //removeWhiteBackground();
 
     // Prevent text selection and dragging on the logo
     preventLogoSelectionAndDragging();

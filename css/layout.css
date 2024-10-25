@@ -99,4 +99,36 @@ footer p {
 
 
 
+/* contact.html
+/* Ensure the page takes up at least the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* The container holding the content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Main content will expand to fill the available space */
+main {
+    flex: 1;
+}
+
+/* Ensure the footer stays at the bottom */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
 
