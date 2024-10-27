@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/glow-button.css">
     <link rel="stylesheet" href="css/img.css">
     <link rel="stylesheet" href="css/txt-section.css">
+    <link rel="stylesheet" href="css/code-block.css">
     <!--   <link rel="stylesheet" href="css/blend-image.css"> -->
     <!-- GSAP Library for JavaScript animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -20,7 +21,14 @@
         <h1>Arch Linux</h1>
         <p> MacBook Pro11,1  1.0</p>
     </header>
-
+ 
+    <a href="https://github.com/jekomaster/jekomaster.github.io.git">
+      <img
+        style="position: fixed; top: 0; right: -0; border: 0"
+        src="images/fork-me.svg"
+        alt="Fork me on GitHub"
+      />
+    </a>
     <main>
       <section class="intro-text">
         <p>This is a simple webpage project, built entirely from scratch without the use of GUI editors or website builders. Everything was manually coded in HTML, CSS, and JavaScript. It is hosted on GitHub for educational purposes, showcasing how a basic website is structured, how the layout is styled with CSS, and how JavaScript is used to create interactive features and special effects.</p>
@@ -66,11 +74,11 @@ networking out of the box, two solutions arecommonly considered:</p>
 	alternative is setting up the Wi-Fi connection directly within the
 	Arch Linux installation environment. MacBooks, especially older
 	models like the 2014 version, often use proprietary Broadcom
-	wireless chips, which can make this process tricky. These chips
-	require proprietary drivers (such as <code>broadcom-wl</code> or
-	<code>b43-firmware</code>) to function correctly on Linux. 
-	</p></li>
-</ul>
+	wireless chips, which can make this process tricky. These chipsrequire
+          require proprietary drivers, such as<br><p align="center"> <span class="codeblock"><span class="tag">Broadcom-wl-dkms</span>
+        
+	</li>
+      
     <div class="logo-hit-area">
      <img id="sourceImage" src="images/bcm4360.png" class="resized-image" draggable="false">
     </div>
@@ -82,7 +90,7 @@ networking out of the box, two solutions arecommonly considered:</p>
 		Wi-Fi drivers</strong>: To get the Wi-Fi working during the Arch
 		installation, you have some options; to pre-download the necessary drivers
 		onto a USB drive or another storage device (usb-drive), repository method. then install them in
-		the live environment. Second and effective solution, to burn a custom iso installer with the drivers loaded in it.
+		the live environment. 
 		</p></li>
 	</ul>
 </ul>
@@ -166,10 +174,10 @@ networking out of the box, two solutions arecommonly considered:</p>
 <ul>
   <h1>Getting Started</h1>
   <br>
-<p>To install Arch Linux on my MacBook Pro 11,1, I explored several methods for enabling the Wi-Fi chip.
+        <p>To install Arch Linux on my MacBook Pro 11,1, I explored several methods for enabling the<p/> <p>Wi-Fi chip.</p>
 <br>
-One approach was to use the repository method; however, I encountered issues with mismatched keyrings that didn’t align with the kernel version, preventing the drivers from loading correctly.<br>
-The most logical solution for me was to create a custom Arch ISO installer with the necessary drivers pre-loaded. This approach allowed me to include everything needed for a seamless Wi-Fi setup during installation.</p>
+        One approach was to use the repository method; however, I encountered issues with mismatched keyrings that didn’t align with the kernel version, preventing the drivers from loading correctly.<p></p><br>
+          The most logical solution for me was to create a custom Arch ISO installer with the necessary drivers pre-loaded. This approach allowed me to include everything needed for a seamless<p/><p> Wi-Fi setup during installation.</p>
 	</ul>
 </ul>
 <h2 class="western" align="left"><br/>
@@ -177,7 +185,7 @@ The most logical solution for me was to create a custom Arch ISO installer with 
 </h2>
  <div class="button-container">
         <a href="nextpage.html" class="glow-button">
-            <span>Here's how</span>
+            <span>Custom Arch.iso</span>
         </a>
     </div>
 </body>
@@ -202,5 +210,5 @@ The most logical solution for me was to create a custom Arch ISO installer with 
       <script src="js/dark-mode.js"></script>
 
 
-</body>
-AP Library for JavaScript animations -->
+</<html>
+  

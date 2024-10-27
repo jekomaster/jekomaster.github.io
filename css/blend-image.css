@@ -24,4 +24,20 @@
     border-radius: 8px; /* Optional: rounding corners */
 }
 
-
+/*Complete List of Blend Mode Options:
+normal
+multiply
+screen
+overlay
+darken
+lighten
+color-dodge
+color-burnhard-light
+hard-light
+soft-light
+difference
+exclusion
+hue
+saturation
+color
+luminosity */
