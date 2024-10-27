@@ -38,4 +38,5 @@ window.addEventListener("load", () => {
     canvas.height = img.clientHeight;
   };
 });
+document.querySelector('.text-frame').style.backgroundImage = "url('images/219-hero.jpg')";
 

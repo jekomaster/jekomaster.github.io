@@ -105,14 +105,6 @@ footer p {
 
 
 
-/* contact.html
-/* Ensure the page takes up at least the full height of the viewport */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 /* The container holding the content */
 body {
     display: flex;
@@ -159,4 +151,5 @@ zero-md {
     color: #333; /* Dark text color */
     overflow-y: auto; /* Allow vertical scrolling if content overflows */
 }
+
 
