@@ -38,5 +38,18 @@ window.addEventListener("load", () => {
     canvas.height = img.clientHeight;
   };
 });
-document.querySelector('.text-frame').style.backgroundImage = "url('images/219-hero.jpg')";
+
+// Select elements
+const markdownInput = document.getElementById("markdown");
+const outputDiv = document.getElementById("output");
+
+// Function to render Markdown as HTML
+function renderMarkdown() {
+  const markdownText = markdownInput.value;
+  const html = marked(markdownText); // Convert Markdown to HTML
+  outputDiv.innerHTML = html;
+}
+
+// Event listener for real-time conversion
+markdownInput.addEventListener("input", renderMarkdown);
 

@@ -1,128 +1,49 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
     <link rel="stylesheet" href="css/layout.css">
-    <<link rel="stylesheet" href="css/text-frame">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-    <style>
-     .centered-text {
-            text-align: center; /* Center text horizontally */
-            margin: 20px; /* Optional margin for spacing */
-        }
-    header, footer {
-           padding: 10px 0; /* Adjust padding */
-           margin: 0; /* Ensure no margin is affecting layout */
-           background-color: #333; /* Set background color for visibility */
-           text-align: center; /* Center the text */
-           font-size: 16px; /* Control font size */
-        }
 
-    header h1, footer p {
-            margin: 0; /* Reset margin for specific elements */
-        }
-     
-     body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Make sure body takes full height */
-        }
-        header, footer {
-            padding: 10px 0;
-            margin: 0;
-            background-color: #f1f1f1;
-            text-align: center;
-            font-size: 16px;
-        }
-        header h1, footer p {
-            margin: 0;
-        }
-        .content-wrapper {
-            flex: 1; /* This will take available space */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center vertically if needed */
-            align-items: center; /* Center horizontally */
-        }
-       footer nav ul {
-            display: flex-direction; /* Use flexbox */
-            flex-direction: row; /* This stacks the items vertically */
+  
 
-        }   
-          </style>
-</head>
-<body>
-    <header>
-        <h1>Arch Linux</h1>
-        <p>MacBook Pro11,1  1.0</p>
+    <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.15/webcomponents-lite.min.js"></script>
+    <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/build/zero-md.html">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/highlight-themes/default.css">
+  </head>
+  <body unresolved>
+     <style>
+ 
+ 
+      .md-html { 
+        min-width: 200px; 
+        max-width: 790px; 
+        margin: 56px auto 0 auto; 
+        padding: 20px; }
+    </style>
+
+<header>
+        <h1>Getting necessary tools</h1>
+        <p>Installing Vitrual Box</p>
     </header>
-      <div class="content-wrapper">
-        <div class="text-frame">
-         <h1 class="centered-text">
-        The initial step is to install a virtual machine on your macOS system. If you are currently operating macOS Big Sur, the latest compatible version for the 2014 model of this device, it is essential to implement a few configurations to ensure that VirtualBox functions correctly. Unfortunately, macOS Big Sur has limited support for many modern applications and software, necessitating these adjustments for optimal performance.
-    </h1>
 
-    <div class="markdown-container"> <!-- Add clearfix class if needed -->
-        <zero-md>
-            <!-- Write your markdown inside a `<script type="text/markdown">` tag -->
-            <script type="text/markdown">
-#### Step 1: Boot into macOS Recovery
-1. Restart your Mac.
-2. **Hold down `Command + R`** as it boots to enter macOS Recovery mode.
 
-#### Step 2: Disable System Integrity Protection (SIP)
-1. In macOS Recovery, go to **Utilities** in the top menu and select **Terminal**.
-2. In the Terminal window, type the following command and press Enter:
-   ```bash
-   csrutil disable
-   ```
-3. You should see a message confirming that SIP is disabled.
-4. **Restart your Mac** to apply the change.
+    <zero-md file="vm.md"><div class="md-html"></div></zero-md>
 
-#### Step 3: Boot into Safe Mode
-1. When your Mac restarts, **hold down the `Shift` key** to enter Safe Mode.
-2. To confirm that you’re in Safe Mode, go to **About This Mac > System Report > Software** and check if "Boot Mode" says "Safe."
-
-#### Step 4: Install VirtualBox
-1. Download the **VirtualBox 7.0.0 BETA1** installer from the [official VirtualBox website](https://download.virtualbox.org/virtualbox/7.0.0_BETA1/).
-2. Run the installer and follow the prompts. If prompted to approve software installation from Oracle, allow it in **System Preferences > Security & Privacy** under the General tab.
-
-#### Step 5: Approve Kernel Extensions (If Prompted)
-1. After installing, you may see a notification to approve Oracle’s kernel extension.
-2. Go to **System Preferences > Security & Privacy** and click **“Allow”** under the General tab.
-
-#### Step 6: Re-enable System Integrity Protection (SIP) (Optional)
-1. Restart your Mac and boot into macOS Recovery by holding `Command + R`.
-2. Open **Terminal** from the Utilities menu.
-3. Re-enable SIP by typing the following command and pressing Enter:
-   ```bash
-   csrutil enable
-   ```
-4. **Restart your Mac** to apply the changes.
-
-##### With these steps, VirtualBox should now be successfully installed and operational on macOS Big Sur! Let me know if you need further help.
-            </script>
-        </zero-md>
-</div>
-      <footer>
-       <nav>
+    <footer>
+      <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-        <p>© 2024 My Website. All rights reserved.</p>
+      </nav>
+      <p>© 2024 My Website. All rights reserved.</p>
     </footer>
+     <script type="module" src="js/main.js"></script>
+      <script src="js/dark-mode.js"></script> 
 
-    <script type="module" src="js/main.js"></script>
-      <script src="js/dark-mode.js"></script>
-
-
-</<html>
+      </body>
+</html>
 
